@@ -124,12 +124,20 @@ body {
 }
 
 #filled {
-    width: 81.5%;
+    width: 0%;
     height: 0.8vw;
     background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     border-radius: 1vw;
     padding-top: 0.1vw;
     padding-right: 0.1vw; 
+    animation-name: load;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes load {
+    from {width: 0%;}
+    to {width: 81.5%}
 }
 
 #dot{
